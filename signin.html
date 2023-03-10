@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+body{
+
+   
+    text-align: center;
+   background-color:cadetblue;
+}
+
+.signin{
+width: 250px;
+height: 300px;
+background-color:  rgba(115, 118, 124, 0.754);
+display: inline-block;
+text-align: center;
+border: 1px solid black;
+border-top-left-radius: 15px;
+border-bottom-right-radius:15px;
+margin-top: 3%;
+
+}
+
+
+div form input{
+border-top: none;
+border-bottom-left-radius: 9px;
+border-bottom-right-radius: 9px;
+color: teal;
+width: 75%;
+height: 25px;
+}
+div h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+}
+div h3 span{
+    color: rgb(51, 226, 51);
+
+}
+div form input:hover{
+border:1px solid turquoise;
+background-color: black;
+color: white;
+}
+
+
+
+footer{
+    margin:16% 0px 0% 0px;
+    width: 100%;
+    
+    text-align: center;
+}
+footer p{
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+ #h2{
+    background-color: rgba(170, 253, 176, 0.737);
+    width: 250px;
+    
+    height: 50px;
+    display: none;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius:15px;
+    margin-top: 3%;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40%;
+   
+}
+h1 a{
+    text-decoration: none;
+    color: white; 
+}
+h1 a:hover{
+    text-decoration: none;
+    color: white; 
+}
+a span {
+    text-decoration: none;
+    color: rgb(51, 226, 51);
+}
+ a span:hover{
+    text-decoration: none;
+    color: rgb(51, 226, 51);
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 ><a href="index.html"><span> H</span>.a <span>S</span>tor </a></h1>
+</header>
+
+<h2 id="h2"></h2>
+  
+    <div class="signin">
+<h3>
+    <span>H</span>.a <span>S</span>tore
+</h3>
+ <form action="">
+<label for="gmail">Gmail:</label><br>
+<input type="email" placeholder="entre your email" id="email" required><br><br>
+<label for="password">
+Password:
+</label><br>
+<input type="password" placeholder="entre your password" required id="password "><br><br>
+
+<input type="button" value="Log in" id="submit" onclick="valider(document.getElementById('h2'))" value="Inscrire">
+
+<br><br><br>
+
+    <img src="icon/facebook (2).png" alt="" width="25px" height="25px">
+    <img src="icon/instagram.png" alt="" width="25px" height="25px">
+    <img src="icon/twitter (1).png" alt="" width="25px" height="25px">
+    <img src="icon/whatsapp.png" alt="" width="25px" height="25px">
+    
+    
+    
+ </form>
+    </div>
+    
+    <footer>
+        <div>
+            <img src="icon/facebook.png" alt="">
+            <img src="icon/instagram (2).png" alt="">
+            <img src="icon/signe-twitter.png" alt="">
+            <img src="icon/whatsapp.png" alt="">
+            
+            
+            </div>
+        <p>@copyright2022</p>
+        
+        </footer> 
+
+<script src="index.js"></script>
+</body>
+</html>

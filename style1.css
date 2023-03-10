@@ -1,0 +1,242 @@
+.commend{
+    width: 80%;
+    margin: auto;
+}
+header{
+ 
+    background-color: rgba(0, 0, 0, 0.24);
+    display: flex;
+		align-items: center;
+		display: flex;
+		width :100%;
+		height: 100%;
+		padding: 0 10px;
+        text-decoration: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+       
+        margin-bottom: 0%;
+       position:relative;
+      
+}
+
+header h1{
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+header h1 span{
+
+    color: rgb(51, 226, 51);
+}
+span{
+
+    color: rgb(51, 226, 51);    
+}
+
+header h1:hover{
+text-shadow: 2px 2px 2px black;
+
+}
+nav{
+    background-color: transparent;
+    text-align: right;
+    border-radius: 1px;
+    margin-top: 0%;
+    
+    
+    }
+    
+     nav ul li{
+    color: black;
+    display: inline-block;
+    padding: 8px;
+    margin:0 5px 5px 5px;
+    
+    }
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin: 0 2px 0 2px;
+    border: 1px solid steelblue ;
+    border-radius:  15px;
+    text-transform: capitalize;
+    border-top: none;
+    border-left:none ;
+    border-right: none;
+    
+    }
+    
+    nav ul li a:hover{
+    background-color: rgb(232, 226, 228);
+    border: 1px solid green;
+    color: black;
+    
+    }
+    footer{
+
+        background-color:rgba(0, 0, 0, 0.24);
+        text-align: center;
+        margin-top: 7%;
+        margin-bottom: 0%;
+        
+    }
+    footer div{
+        display: inline-flex;
+        
+    }
+    footer div img{
+        width: 25px;
+        height: 25px;
+        margin-right: 3px;
+    }
+    footer div img:hover{
+        background-color: #fff;
+        border-radius:2px;
+    }
+  input{
+      width: 100%;
+      height: 30px;
+      outline: none;
+      border: none;
+    background-color: #111;
+    margin: 15px 15px;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+
+  } 
+
+  input:focus{
+      background-color: #000;
+      transform: scale(1.02);
+    
+  }
+  
+  .price input{
+      width: 20%;
+
+  }
+
+  .price{
+      padding: 0;
+  }
+  #total{
+      background-color: #a00d02;
+      padding: 5px 2px;
+      border-radius: 4px;
+  }
+  select{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+  background-color: #111;
+  margin: 15px ;
+  border-radius: 4px;
+  padding: 4px;
+  color: #fff;
+  
+  }
+  #title{
+      margin-bottom: 15px;
+  }
+  .navmen{
+      background-color: rgb(232, 226, 228) ;
+      color: #000;
+  }
+  select:focus{
+    background-color: #000;
+    transform: scale(1.02);
+  }
+  #category{
+      margin-bottom: 15px;
+  }
+  #total::before{
+      content: 'Total:';
+  }
+  .inputs input{
+      margin-top: 5px;
+      margin-bottom: 15px; 
+
+  }
+
+  #search{
+      margin-top: 15px;
+  }
+  button{
+      width: 100%;
+      height: 30px;
+      border: none ;
+      cursor: pointer;
+      background: green;
+      color: #fff;
+      
+      transition: 0.5s;
+  }
+  button:hover{
+      background-color: #38e54f;
+      letter-spacing: 1px;
+      border-radius: 50px;
+  }
+  .btnsearch{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .btnsearch button{
+      width: 45%;
+      
+  }
+  table{
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+  }
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+    width: auto;
+}
+#deleteAll #delettout{
+    background-color: #a00d02;
+    border-radius: 5px;
+}
+#deleteAll #delettout:hover{
+    background-color: red;
+}
+.commend button{
+    border-radius: 5px;
+}
+#delete{
+    background-color: #a00d02; 
+}
+#delete:hover{
+    background-color: red;
+}
+.scroles{
+    width: 40px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    display: inline;
+    border-radius: 50%;
+    font-size: 40px;
+    color: darkorange;
+    background-color: #3d3d3d;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(0, 255, 204);
+    
+    cursor: pointer;
+    box-shadow:2px 2px 2px  rgb(255, 247, 6);
+}

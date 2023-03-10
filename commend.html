@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commend</title>
+<link rel="stylesheet" href="style1.css">
+
+<link rel="stylesheet" href="bootstrap.min.css">
+
+    <style>
+.bodymen {
+background-image:none ;
+   
+    text-align: center;
+    background-color: tomato;}
+
+.commend{
+width: 80%;
+height: auto;
+background-color:  rgba(115, 118, 124, 0.754);
+display: inline-block;
+text-align: center;
+border: 1px solid black;
+border-top-left-radius: 15px;
+border-bottom-right-radius:15px;
+margin-top: 3%;
+padding: 10px;
+}
+
+
+
+div h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white;
+}
+div h3 span{
+    color: rgb(51, 226, 51);
+
+}
+
+
+
+footer{
+    margin:16% 0px 0% 0px;
+    width: 100%;
+    
+    text-align: center;
+}
+footer p{
+    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+
+    </style>
+</head>
+
+<body class="bodymen">
+<header>
+    <h1 ><span>H</span>.a <span>S</span>tor </h1>
+</header>
+<nav><ul>
+    <li><a href="index.html" >home</a></li>
+
+    <li><a href="children.html"> CHILDREN</a></li>
+    <li><a href="commend.html" class="navmen">my requests</a></li>
+        </ul></nav>
+
+    
+<div class="commend">
+        <div class="head">
+                <h3>
+                    <span>my </span>requ<span>ests</span>
+                </h3><hr style="background-color:green ; height:5px;"><br>
+        </div>
+    <div class="inputs">
+        <select name="" id="title" >
+            <option value="">Category*</option>
+        
+            <option value="kids">kids</option>
+            <option value="men">Men</option>
+            <option value="women">women</option>
+
+        </select>
+        <!-- <input type="text" placeholder="title" id="title"> -->
+        <div class="price">
+            <input type="number" onkeyup="getTotal()" onclick="getTotal()" id="price" placeholder="price*" >
+            <input type="number" id="taxes" placeholder="taxes" onkeyup="getTotal()" onclick="getTotal()">
+            <input type="number" id="ads" placeholder="ads" onkeyup="getTotal()" onclick="getTotal()">
+            <input type="number" id="discount" placeholder="discount" onkeyup="getTotal()" onclick="getTotal()">
+            <span id="total"></span>
+        </div>
+        <input type="number" id="count" placeholder="count<=100">
+        <!-- <input type="text" placeholder="category" id="category"> -->
+        <select  id="category" >
+            
+            
+           
+            <option value=""  >Type*</option>
+            <option value="African shirt red">African shirt red</option>
+            <option value="African shirt yellow">African shirt yellow</option>
+            <option value="African shirt green">African shirt green</option>
+            <option value="African shirt brown">African shirt brown</option>
+            <option value="shirt white">shirt white</option>
+            <option value="shirt black">shirt black</option>
+            <option value="suit turquoise">suit turquoise</option>
+            <option value="T-shirt white">T-shirt white</option>
+            <option value="African dress small">African dress small</option>
+            <option value="African dress white&green">African dress white&green</option>
+            <option value="frican dress turquoise">African dress turquoise</option>
+            <option value="African dress hunter green">African dress hunter green </option>
+            <option value="dress baby blue">dress baby blue</option>
+            <option value="dress  blue&yellow">dress  blue&yellow</option>
+            <option value="dress baby blue&yellow">dress baby blue&yellow</option>
+            <option value="dress blue">dress blue</option>        </select>
+
+        <button id="submit">Create</button>
+
+    </div>
+    <hr style="background-color:green ; height:5px;">
+    <div class="outputs">
+        <div class="searchblock">
+            <input onkeyup='searchData(this.value)' type="text" id="search" placeholder="search">
+            <div class="btnsearch">
+                <button onclick='getSearchMood(this.id)' id="searchtitle">Search By Category</button>
+                <button onclick='getSearchMood(this.id)' id="searchcategory">Search By Type</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div id="deleteAll">
+        
+    </div>
+    <hr style="background-color:green ; height:5px;">
+ <table>
+    <tr>
+        <th>id</th>
+        <th>Category</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total </th>
+        <th>Type </th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+    <tbody id="tbody">
+        
+
+
+    </tbody>
+
+    </table>
+
+
+</div>
+
+<Div>
+    <span onclick="secroles()" class="scroles"  >^</span>
+   
+    <footer>
+        <div>
+            <img src="icon/facebook.png" alt="">
+            <img src="icon/instagram (2).png" alt="">
+            <img src="icon/signe-twitter.png" alt="">
+            <img src="icon/whatsapp.png" alt="">
+            
+            
+            </div>
+        <p>@copyright2022</p>
+        
+        </footer> 
+
+<script src="javascript.js"></script>
+</body>
+</html>

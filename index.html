@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.a store   </title>
+    <link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="bootstrap.min.css"> 
+
+
+</head>
+<style>
+    #sign{
+        right: auto;
+        right: 0%;
+        margin-left: 0%;
+        margin-left: 100%;
+        
+    }
+ 
+</style>
+<script src="jquery-3.6.0.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+    $("#FadeOut").click(function(){
+
+       $(".card").fadeOut(3333);
+    })
+    $("#FadeIn").click(function(){
+
+    $(".card").fadeIn(3333);
+    })
+      $("#togg").click(function(){
+
+     $(".card").fadeToggle(3333);
+    })
+    $("#slidetogg").click(function(){
+
+$(".card").slideToggle(3333);
+})
+$("#animate").click(function(){
+
+$(".card").animate({
+top:'20px',
+right:'40px',
+width:'400px',
+height:'500px',
+opacity:'0.2',
+ 
+
+},2000);
+})
+
+   });
+ 
+
+
+ 
+
+
+
+
+</script>
+<body class="bodyimgnone">
+    <div class="articlehome">
+    <header>
+       
+<h1 ><span>H</span>.a <span id="spanch">S</span>tore </h1>
+
+<ul>
+<li>   <a href="signin.html" id="signin">sign in</a> </li>
+ <!-- <li> <a href="" id="sign" >sign in </a> </li> -->
+</ul>
+
+</header>
+
+    <nav><ul>
+<li><a href="projet1.html"  class="navmen">home</a></li>
+
+<li><a href="children.html"> CHILDREN</a></li>
+<li><a href="commend.html">my requests</a></li>
+
+    </ul></nav>
+
+ <section>
+    <h2>Welcome to my <br> store</h2><br>
+<article id="articlebg">
+
+<p class="bodyp1">
+<span class="green">H</span>.a <span class="green">S</span>tore The most interesting store
+ with adult and young women and men and men are all that 
+  they will be blessed for you will find it!!. as you do not want to buy ,
+enjoy promises to buy later. <br><br>
+<a href="#readmore"> Read More</a>
+</p>
+<img src="image/imagebg1.jpg" alt=" image"><hr>
+
+
+
+</article>
+
+</div>
+
+
+<hr style="height:4px ; background-color: rgb(7, 7, 7); margin-top: 0%; box-shadow: 8px 8px 8px gold;">
+
+<!-- <div class="progress">
+    <div class="progress-bar bg-success" style="width: 90%;">Percentage of our visitors who buy our products 90%</div>
+    
+    
+</div> -->
+ </section> 
+ <section id="projects" class="projects">
+    <h2 class="projects__title">The articles  </h2>
+    <section id="cards" class="cards">
+      
+      <div class="card">
+        <h3 class="card__title">African Clothing </h3>
+        <img class="card__img" src="image/enf (2).jpg" alt="image d'illustration de mon projet javascript">
+        <p class="card__text">African clothing and fashion is a diverse topic that is able to provide a
+           look into different African cultures. Clothing varies from brightly colored textiles, 
+          to abstractly embroidered robes, to colorful beaded bracelets and necklaces</p>
+      </div>
+      <div class="card">
+        <h3 class="card__title">African Clothing </h3>
+        <img class="card__img" src="image/enf (4).jpg" alt="image d'illustration de mon projet react">
+        <p class="card__text">African clothing and fashion is a diverse topic that is able to provide a
+           look into different African cultures. Clothing varies from brightly colored textiles,
+           to abstractly embroidered robes, to colorful beaded bracelets and necklaces</p>
+      </div>
+      <div class="card">
+        <h3 class="card__title">African Clothing </h3>
+        <img class="card__img" src="image/enf (13).jpg" alt="image d'illustration de mon projet node">
+        <p class="card__text">African clothing and fashion is a diverse topic that is able to provide a look 
+          into different African cultures. Clothing varies from brightly colored textiles, to abstractly embroidered robes, 
+          to colorful beaded bracelets and necklaces</p>
+      </div>
+
+    </section>
+    <div class="divTogg"><button id="togg" class="buttonTogg">FadeToggle</button><button class="buttonTogg" id="FadeIn">FadeIN</button>
+      <button class="buttonTogg" id="FadeOut"> FadeOut</button>
+    <button class="buttonTogg" id="slidetogg">SlideToggle</button>
+    <button class="buttonTogg" id="animate">Animate </button>
+    </div>
+  </section>
+ 
+  <section id="new-project" class="new-project">
+    <h2 class="new-project__title">Add articles </h2>
+    <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
+      <div class="new-project-form__input-group">
+        <label for="project-title">Card Title: </label>
+        <input type="text" name="project-title" id="project-title">
+      </div>
+      <div class="new-project-form__input-group">
+        <label for="project-img-link">Link to an image :</label>
+        <input type="text" name="project-img-link" id="project-img-link">
+      </div>
+      <div class="new-project-form__input-group new-project-form__input-group--textarea">
+        <label for="project-text">Project Description: </label>
+        <textarea name="project-text" id="project-text" rows="3"></textarea>
+      </div>
+      <button class="new-project__button" type="submit">Create the card</button>
+    </form>
+  </section>
+
+
+
+ 
+<footer>
+    <div>
+        <img src="icon/facebook.png" alt="">
+        <img src="icon/instagram (2).png" alt="">
+        <img src="icon/signe-twitter.png" alt="">
+        <img src="icon/whatsapp.png" alt="">
+        
+        
+        </div>
+<p>@copyright2022</p>
+
+</footer> 
+
+<script src="index.js"></script>
+
+</body>
+</html>
