@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 body{
 background-color: darkgray;
-background-image: url(image/img_full.png);
+background-image: url(./image/img_full.png);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: 100%;
@@ -20,7 +20,7 @@ flex-wrap: wrap;
 .articlehome{
 
     background-color: darkgray;
-    background-image: url(image/img_full.png);
+    background-image: url(./image/img_full.png);
     background-repeat: no-repeat;
     background-attachment: local ;
     background-size: 100%;
